@@ -1,0 +1,88 @@
+/* Centering the entire app */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Centering the to-do list container */
+.todo-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Styling the input and buttons */
+.todo-container input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.todo-container button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-container button:hover {
+  background-color: #218838;
+}
+
+.todo-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-container li:last-child {
+  border-bottom: none;
+}
+
+.todo-container li span {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.todo-container li button {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.todo-container li button:hover {
+  background-color: #c82333;
+}
+
+.todo-container .filters button {
+  background-color: #007bff;
+  margin: 0 5px;
+}
+
+.todo-container .filters button:hover {
+  background-color: #0056b3;
+}
+
+.todo-container .filters {
+  margin: 10px 0;
+}
